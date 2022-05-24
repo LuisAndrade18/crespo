@@ -168,7 +168,7 @@
     left: 0;
   }  
 }
-@media (min-width: 900px) {
+@media (min-width: 940px) {
 
   .top_social {
     display: none;
@@ -212,9 +212,14 @@
   }
   .menu_desk--ul {
     width: 100%;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     color: #9767A9;
     justify-content: space-evenly;
+  }
+
+  .menu_desk--li {
+    text-align: center;
+    padding: 3px;
   }
 
   .menu_desk--li:hover{
