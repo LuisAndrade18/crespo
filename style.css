@@ -46,12 +46,10 @@
   height: 40%;
   position: relative;
   z-index: 10;
-  border: solid red;
   overflow: hidden;
 }
 
 .banner_big-hair {
-
   max-width: 650px;
   max-height: 300px;
   position: relative;
