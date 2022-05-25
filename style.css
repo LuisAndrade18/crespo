@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
 
+/* configurações gerais */
 *{
   margin: 0;
   padding: 0;
@@ -11,6 +12,7 @@
   display: flex;
 }
 
+/* configurações header */
 .box_header {
   width: 100%;
   max-width: 750px;
@@ -108,22 +110,66 @@
 }
 
 .intro_text--mob h2 {
-  font-size: 2rem;
+  font-size: 5.75vw;
   font-family: 'Playfair Display', sans-serif;
   margin: 2% 0;
 }
 
 .intro_text--mob p {
-  font-size: 1.2rem;
+  font-size: 4vw;
   font-family: 'Montserrat', sans-serif;
   font-weight: 200;
   margin-top: 15px;
 }
 
+/* configuraçõe main */
+
+.box_main {
+  width: 100%;
+}
+
+.main_tips {
+  flex-wrap: wrap;
+}
+
+.tips_box { /*border: solid red;*/
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.tips_box img { /*border: solid green;*/
+  width: 80%;
+  position: relative;
+  top: 5vh;
+}
+
+ .tips_box--text { /*border: solid white; */
+  width: 100%;
+  color: #fff;
+  background-color: #9767A9;
+  padding: 36px 33px;
+  position: relative;
+}
+
+ .tips_box--text h3 { /*border: solid yellow; */
+  padding-bottom: 2vh;
+  font-size: 6vw;
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: 700;
+}
+ .tips_box--text p { /*border: solid black; */
+  font-size: 4vw;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+}
+
+
 /* inicio responsivo */
 
 @media (min-width:550px) {
-
+/* configurações header */
   .box_header {
     width: 100%;
     max-width: 1000px;
@@ -156,9 +202,11 @@
   .banner_title--right {
     font-size: 3.2vw;
   }
+
 }
 
 @media (min-width: 770px) {
+/* configurações header */
   .banner_title {
     width: 100%;
     max-height: 400px;
@@ -169,7 +217,7 @@
   }  
 }
 @media (min-width: 940px) {
-
+/* configurações header */
   .top_social {
     display: none;
   }
@@ -260,7 +308,7 @@
 }
 
 @media (min-width: 1024px) {
-
+/* configurações header */
   .header_banner {
     width: 100%;
     max-width: 1920px;
@@ -322,9 +370,48 @@
     font-family: 'Playfair Display', sans-serif;
     font-weight: 900;
   }
+/* configuraçõe main */
+  .box_main {
+    width: 100%;
+    max-width: 1920px;
+  }
+  .main_tips {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .tips_box img { /*border: solid green;*/
+    width: 100%;
+    position: relative;
+    top: 5vh;
+  }
+
+  .tips_box {
+ 
+    width: 45%;
+  }
+
+  .tips_box--text { /*border: solid white; */
+    flex-direction: column;
+    width: 80%;
+    color: #fff;
+    background-color: #9767A9;
+    padding: 36px 33px;
+    position: relative;
+  }
+  
+   .tips_box--text h3 { /*border: solid yellow; */
+    padding-bottom: 2vh;
+    font-size: 3vw;
+  }
+   .tips_box--text p { /*border: solid black; */
+    font-size: 1.25vw;
+  }
+
 }
 
 @media (min-width: 1440px) {
+/* configurações header */
   .top_social img {
     width: 40px;
   }
