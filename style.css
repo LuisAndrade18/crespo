@@ -130,22 +130,32 @@
 
 .main_tips {
   flex-wrap: wrap;
+  align-items: center;
 }
 
-.tips_box { /*border: solid red;*/
+.tips_box {
   width: 100%;
   align-items: center;
   flex-direction: column;
   position: relative;
 }
 
-.tips_box img { /*border: solid green;*/
+.tips_box img {
   width: 80%;
   position: relative;
   top: 5vh;
 }
 
- .tips_box--text { /*border: solid white; */
+.cacho {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.cacho img {
+  width: 60%;
+}
+
+ .tips_box--text { 
   width: 100%;
   color: #fff;
   background-color: #9767A9;
@@ -153,13 +163,14 @@
   position: relative;
 }
 
- .tips_box--text h3 { /*border: solid yellow; */
+ .tips_box--text h3 {
   padding-bottom: 2vh;
   font-size: 6vw;
   font-family: 'Playfair Display', sans-serif;
   font-weight: 700;
 }
- .tips_box--text p { /*border: solid black; */
+
+ .tips_box--text p {
   font-size: 4vw;
   font-family: 'Montserrat', sans-serif;
   font-weight: 200;
@@ -285,17 +296,18 @@
     width: 80%;
     min-width: 150px;
     height: 40px;
-    text-indent: 40px;
     border: solid 3px;
+    text-indent: 45px;
     border-color: #9767A9;
     border-radius: 100px;
+    font-family: 'Montserrat', sans-serif;
   }
 
   .top_search input::placeholder {
     color: #9767A9;
-    font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
     font-weight: 200;
+    text-indent: 25px;
     background-image: url(./assets/Layer_3.svg);
     background-repeat: no-repeat;
     background-size: contain;
@@ -371,40 +383,57 @@
     font-weight: 900;
   }
 /* configuraçõe main */
+
   .box_main {
     width: 100%;
     max-width: 1920px;
   }
-  .main_tips {
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
 
-  .tips_box img { /*border: solid green;*/
-    width: 100%;
+  .main_tips {
     position: relative;
-    top: 5vh;
+    top: 10rem;
+    flex-direction: row;
+    justify-content: center;
   }
 
   .tips_box {
- 
+    position: relative;
+    height: 25%;
     width: 45%;
+    margin: 8px;
+    margin-bottom: 15rem;
   }
 
-  .tips_box--text { /*border: solid white; */
-    flex-direction: column;
-    width: 80%;
-    color: #fff;
-    background-color: #9767A9;
-    padding: 36px 33px;
+  .left {
+    top: -15rem;
+  }
+
+  .tips_box img {
     position: relative;
+    width: 100%;
+    top: 0;
+  }
+
+  .cacho {
+    width: 45%;
+  }
+  .cacho img {
+    margin-top: -10rem;
+    width: 70%;
+  }
+
+  .tips_box--text {
+    position: absolute;
+    width: 70%;
+    top: 70%;
   }
   
-   .tips_box--text h3 { /*border: solid yellow; */
+   .tips_box--text h3 {
     padding-bottom: 2vh;
-    font-size: 3vw;
+    font-size: 2vw;
   }
-   .tips_box--text p { /*border: solid black; */
+
+   .tips_box--text p {
     font-size: 1.25vw;
   }
 
