@@ -176,6 +176,26 @@
   font-weight: 200;
 }
 
+.main_galery { border: solid;
+  width: 100%; 
+  justify-content: center;
+}
+
+.galery_left { width: 90%;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.galery_left img { border: solid;
+  width: 100%;
+  max-width: 140px;
+  margin: 5px;
+}
+
+.galery_right {
+  display: initial;
+}
+
 
 /* inicio responsivo */
 
