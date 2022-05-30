@@ -200,61 +200,76 @@ body {
   align-items: center;
 }
 
-.galery_left { border: solid;
-  width: 80%;
-  flex-direction: column;
-
+.main_galery img {
+  padding: 5px;
 }
 
-/* .galery_left img {display: none;
+.galery_left {
+  width: 90%;
+  flex-wrap: wrap;
+}
+
+.galery_left--inside {
+  width: 50%;
+  flex-wrap: wrap;
+}
+
+  img[src="./assets/king.png"]{
+    width: 50%;
+  }
+
+  img[src="./assets/tais araujo.png"]{
+    width: 100%;
+  }
+
+  img[src="./assets/Killmonger.png"] {
+    width: 50%;
+  } 
+
+  img[src="./assets/be once.png"]{
+    width: 50%;
+  }
+
+  img[src="./assets/gloriamaria.png"] {
+    width: 100%;
+  }
+
+.galery_right {
+  width: 90%;
+  flex-wrap: wrap;
+}
+
+.galery_right img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-} */
-/* 
-img[src="./assets/king.png"]{
 }
 
-img[src="./assets/tais araujo.png"]{
+.galery_right--inside {
+  width: 50%;
+  flex-wrap: wrap;
 }
 
-img[src="./assets/Killmonger.png"] {
-} 
-
-img[src="./assets/be once.png"]{
-}  */
-
-.galery_right { border: solid;
-  width: 80%;
-  flex-direction: column;
+.galery_right--inside img {
+  width: 50%;
 }
 
-/* .galery_right img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-} */
-/* 
-img[src="./assets/gloriamaria.png"]{ 
+  img[src="./assets/calça colorida.png"] {
+    width: 50%;
+  }
+  img[src="./assets/mao na barba.png"]{
+    width: 50%;
+  }
+  
+  img[src="./assets/trança.png"]{
+    width: 50%;
+  }
 
-}
-
-img[src="./assets/calça colorida.png"] {
-}
-
-img[src="./assets/trança.png"]{
-}
-
-img[src="./assets/cabelo snoopydog.png"] {
-}
-
-img[src="./assets/mao na barba.png"]{
-}
-
-img[src="./assets/cigarrinho.png"]{
-}
- */
-
+  img[src="./assets/cabelo snoopydog.png"] {
+    width: 50%;
+  }
+  
+  img[src="./assets/cigarrinho.png"]{
+    width: 50%;
+  }
 
 /* fim mobile */
 
