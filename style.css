@@ -204,7 +204,11 @@ body {
   padding: 5px;
 }
 
-.galery_left {
+.galery_left--desk, .galery_right--desk {
+  display: none;
+}
+
+.galery_left--mob {
   width: 90%;
   flex-wrap: wrap;
 }
@@ -234,13 +238,9 @@ body {
     width: 100%;
   }
 
-.galery_right {
+.galery_right--mob {
   width: 90%;
   flex-wrap: wrap;
-}
-
-.galery_right img {
-  width: 100%;
 }
 
 .galery_right--inside {
@@ -327,7 +327,7 @@ body {
   }
 }
 
-@media (min-width: 940px) {
+@media (min-width: 980px) {
 
   /* configurações header */
   body {
@@ -428,6 +428,7 @@ body {
 
   .top_search {
     width: 20%;
+    margin-right: 2%;
     align-items: center;
     justify-content: center
   }
@@ -457,11 +458,6 @@ body {
     transform: translate(0, -50%);
   }
 
-}
-
-@media (min-width: 1024px) {
-
-  /* configurações header */
   .header_banner {
     width: 100%;
     max-width: 1920px;
@@ -586,11 +582,110 @@ body {
     font-size: 1vw;
   }
 
+  .main_galery {
+    flex-direction: row;
+    width: 90%;
+    margin: 0 auto;
+    max-height: 850px;
+  }
+
+  .galery_left--mob, .galery_right--mob{
+    display: none;
+  }
+
+  .galery_left--desk, .galery_right--desk {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    max-height: 850px;
+  }
+
+  .galery_left--desk {
+    position: relative;
+    width: 45%;
+    height: 100%;
+  }
+
+  .galery_left--inside {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40%;
+    height: 100%;
+  }
+  img[src="./assets/king.png"]{
+    width: 60%;
+  }
+  
+  img[src="./assets/tais araujo.png"]{
+    width: 100%;
+  }
+  
+  img[src="./assets/Killmonger.png"] {
+    width: 100%;
+  } 
+  
+  img[src="./assets/be once.png"]{
+    width: 100%;
+  }
+  
+  img[src="./assets/gloriamaria.png"] {
+    width: 60%;
+  } 
+
+  .galery_right--desk {
+    width: 60%;
+    height: 100%;
+    max-height: 850px;
+    flex-wrap: wrap;
+  }
+
+  .galery_right--inside {
+    width: 30%;
+    flex-direction: column;
+  }
+
+    img[src="./assets/calça colorida.png"] {
+      width: 40%;
+    }
+
+    img[src="./assets/trança.png"]{ 
+      width: 100%;
+    }
+    
+    img[src="./assets/mao na barba.png"]{
+      width: 100%;
+    }
+    
+    img[src="./assets/cabelo snoopydog.png"] {
+      width: 100%;
+    }
+    
+    img[src="./assets/cigarrinho.png"]{
+      width: 100%;
+      height: 70.5%;
+      object-fit: cover;
+    }
+
 }
 
 @media (min-width: 1440px) {
 
   /* configurações header */
+  .header_top {
+    max-width: 1920px;
+  }
+  .top_search {
+    margin: 0;
+  }
+
+  .top_social {
+    display: flex;
+    width: 15%;
+    margin: 0 4% 0 1%;
+    justify-content: space-evenly;
+  }
+
   .top_social img {
     padding:2px;
     width: 40px;
@@ -601,18 +696,14 @@ body {
     transform: scale(1.2);
   }
 
-  .top_social {
-    display: flex;
-    width: 15%;
-    margin-right: 3%;
-    margin: 0 2.5%;
-    justify-content: space-evenly;
-  }
-
   .menu_desk--ul {
     margin: 0 auto;
     width: 80%;
   }
+}
+
+footer {
+  height: 40vh;
 }
 
 /* fim responsivo */
