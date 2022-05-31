@@ -107,6 +107,8 @@ body {
 
 .header_intro {
   width: 100%;
+  max-width: 700px;
+  margin: auto;
   background-color: #9767A9;
   justify-content: center;
 }
@@ -131,7 +133,7 @@ body {
   font-size: 4vw;
   font-family: 'Montserrat', sans-serif;
   font-weight: 200;
-  margin-top: 15px;
+  margin-top: 25px;
 }
 
 /* configuraçõe main */
@@ -148,6 +150,8 @@ body {
 
 .tips_box {
   width: 100%;
+  max-width: 500px;
+  margin: auto;
   align-items: center;
   flex-direction: column;
   position: relative;
@@ -155,6 +159,7 @@ body {
 
 .tips_box img {
   width: 80%;
+  max-width: 400px;
   position: relative;
   top: 5vh;
 }
@@ -195,7 +200,9 @@ body {
 }
 
 .main_galery {
+  margin: auto;
   width: 100%;
+  max-width: 700px;
   flex-direction: column ;
   align-items: center;
 }
@@ -312,6 +319,31 @@ body {
     font-size: 3.2vw;
   }
 
+  .intro_text--mob h2 {
+    font-size: 4.5vw;
+  }
+  
+  .intro_text--mob p {
+    font-size: 2.5vw;
+  }
+
+  /* configurações main */
+  .right {
+    margin-right: 20px;
+  }
+
+  .left {
+    margin-left: 20px;
+  }
+
+  .tips_box--text h3 {
+    font-size: 3vw;
+  }
+  
+  .tips_box--text p {
+    font-size: 2vw;
+  }
+
 }
 
 @media (min-width: 770px) {
@@ -325,9 +357,11 @@ body {
     flex-direction: row;
     left: 0;
   }
+
+
 }
 
-@media (min-width: 980px) {
+@media (min-width: 950px) {
 
   /* configurações header */
   body {
@@ -497,6 +531,10 @@ body {
     font-size: 2.2vw;
   }
 
+  .header_intro {
+    max-width: none;
+  }
+
   .intro_text--mob {
     display: none;
   }
@@ -537,8 +575,9 @@ body {
     flex-direction: row;
     justify-content: center;
   }
-
+  
   .tips_box {
+    max-width: none;
     position: relative;
     height: 25%;
     width: 45%;
@@ -551,6 +590,7 @@ body {
   }
 
   .tips_box img {
+    max-width: none;
     position: relative;
     width: 100%;
     top: 0;
@@ -586,6 +626,7 @@ body {
     flex-direction: row;
     width: 90%;
     margin: 0 auto;
+    max-width: none;
     max-height: 850px;
   }
 
